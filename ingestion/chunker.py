@@ -1,15 +1,12 @@
 """
-Découpe les sections/sous-sections extraites (raw_sections.json) en chunks
-de taille contrôlée, prêts pour l'embedding, en utilisant un découpage
-récursif (paragraphe > ligne > phrase > mot) pour ne jamais couper au
-mauvais endroit.
+Découpe les policies/sous-sections extraites (raw_sections.json, structure
+imbriquée avec "subsections") en chunks de taille contrôlée, prêts pour
+l'embedding, via un découpage récursif (paragraphe > ligne > phrase > mot).
 
-Chaque section/sous-section est chunkée indépendamment : le chunking ne
-fusionne jamais deux sections différentes, il respecte les frontières
-déjà posées par extract_pdf.py.
+Chaque section ET chaque sous-section est chunkée indépendamment.
 
 Usage:
-    python ingestion/chunker.py
+    python -m ingestion.chunker
 Produit:
     data/processed/chunks.jsonl
 """
@@ -33,15 +30,18 @@ splitter = RecursiveCharacterTextSplitter(
 )
 
 
-def load_sections(path: Path) -> list[dict]:
+def load_policies(path: Path) -> list[dict]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def split_section_into_chunks(section: dict) -> list[dict]:
-    content = section["content"]
-    section_id = section["section_id"]
-    title = section["title"]
+def chunk_one_unit(section_id: str, title: str, content: str) -> list[dict]:
+    """
+    Découpe le texte d'une seule section/sous-section en un ou plusieurs
+    chunks via le recursive splitter.
+    """
+    if not content or not content.strip():
+        return []
 
     text_pieces = splitter.split_text(content)
 
@@ -57,19 +57,37 @@ def split_section_into_chunks(section: dict) -> list[dict]:
     ]
 
 
+def chunk_policy(policy: dict) -> list[dict]:
+    """
+    Chunke une policy complète : son contenu principal (intro, PURPOSE/SCOPE
+    avant la première sous-section) PUIS chacune de ses sous-sections.
+    """
+    chunks = []
+
+    chunks.extend(
+        chunk_one_unit(policy["section_id"], policy["title"], policy.get("content", ""))
+    )
+
+    for sub in policy.get("subsections", []):
+        chunks.extend(
+            chunk_one_unit(sub["section_id"], sub["title"], sub.get("content", ""))
+        )
+
+    return chunks
+
+
 def main():
     if not RAW_SECTIONS_PATH.exists():
         raise FileNotFoundError(
-            f"{RAW_SECTIONS_PATH} introuvable. "
-            f"Lance d'abord ingestion/extract_pdf.py."
+            f"{RAW_SECTIONS_PATH} introuvable. Lance d'abord ingestion/extract_pdf.py."
         )
 
-    sections = load_sections(RAW_SECTIONS_PATH)
-    print(f"{len(sections)} sections chargées.")
+    policies = load_policies(RAW_SECTIONS_PATH)
+    print(f"{len(policies)} policies chargées.")
 
     all_chunks = []
-    for section in sections:
-        all_chunks.extend(split_section_into_chunks(section))
+    for policy in policies:
+        all_chunks.extend(chunk_policy(policy))
 
     print(f"{len(all_chunks)} chunks générés.")
 
@@ -80,10 +98,13 @@ def main():
 
     print(f"Chunks sauvegardés dans {CHUNKS_PATH}")
 
-    print("\n--- Aperçu des 5 premiers chunks ---")
+    print("\n--- Aperçu de quelques chunks ---")
     for c in all_chunks[:5]:
         preview = c["text"][:100].replace("\n", " ")
         print(f"[{c['chunk_id']}] {c['title']} ({len(c['text'])} car.) -> {preview}...")
+
+    sick_leave_chunks = [c for c in all_chunks if c["section_id"] == "11.6"]
+    print(f"\nChunks trouvés pour 11.6 Sick Leave : {len(sick_leave_chunks)}")
 
     lengths = [len(c["text"]) for c in all_chunks]
     print(f"\nTaille moyenne des chunks: {sum(lengths)//len(lengths)} caractères")
