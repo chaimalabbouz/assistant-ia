@@ -15,3 +15,8 @@ CHUNKS_PATH = PROCESSED_DATA_DIR / "chunks.jsonl"
 QDRANT_HOST = "localhost"
 QDRANT_PORT = 6333
 QDRANT_COLLECTION_NAME = "hr_policy_chunks"
+
+# --- Evaluation ---
+EVAL_DIR = PROJECT_ROOT / "eval"
+GOLDEN_DATASET_PATH = EVAL_DIR / "golden_dataset" / "hr_questions.json"
+EVAL_RESULTS_DIR = EVAL_DIR / "results"

@@ -1,0 +1,680 @@
+{
+  "config": "hybrid_reranked",
+  "top_k": 5,
+  "recall_at_k": 0.9166666666666666,
+  "mrr": 0.826388888888889,
+  "details": [
+    {
+      "question": "How many hours of sick leave do I accrue per month?",
+      "expected_section_id": "11.6",
+      "retrieved_section_ids": [
+        "11.6",
+        "11.6",
+        "11.8",
+        "11.8",
+        "6.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Is there a limit to how much sick leave I can bank?",
+      "expected_section_id": "11.6",
+      "retrieved_section_ids": [
+        "11.6",
+        "11.6",
+        "11.8",
+        "11.8",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I resign after many years of service, can I get paid out for unused sick leave?",
+      "expected_section_id": "11.6",
+      "retrieved_section_ids": [
+        "11.6",
+        "11.2",
+        "11.8",
+        "11.8",
+        "6.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How much vacation time do I earn when I first start working, versus after 10 years?",
+      "expected_section_id": "11.7",
+      "retrieved_section_ids": [
+        "11.8",
+        "11.8",
+        "11.7",
+        "11.8",
+        "11.7"
+      ],
+      "hit": true,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "question": "Do I get paid for unused vacation if I leave the county?",
+      "expected_section_id": "11.7",
+      "retrieved_section_ids": [
+        "11.7",
+        "16.1",
+        "11.8",
+        "12.3",
+        "11.11"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What can PTO be used for, and who is eligible for the PTO plan instead of traditional vacation/sick leave?",
+      "expected_section_id": "11.8",
+      "retrieved_section_ids": [
+        "11.8",
+        "11.8",
+        "12.5",
+        "11.8",
+        "11.6"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How many paid days off do I get if my mother passes away?",
+      "expected_section_id": "12.4",
+      "retrieved_section_ids": [
+        "12.4",
+        "12.4",
+        "12.4",
+        "12.1",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Does my domestic partner count as immediate family for bereavement leave?",
+      "expected_section_id": "12.4",
+      "retrieved_section_ids": [
+        "12.4",
+        "12.4",
+        "11.9",
+        "11.6",
+        "11.1A"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How many weeks of leave can I take under FMLA to care for a seriously ill family member?",
+      "expected_section_id": "12.1",
+      "retrieved_section_ids": [
+        "12.1",
+        "12.1",
+        "12.1",
+        "12.1",
+        "12.2"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Do I need to use up my sick leave before going on unpaid FMLA leave?",
+      "expected_section_id": "12.1",
+      "retrieved_section_ids": [
+        "12.1",
+        "12.9",
+        "12.1",
+        "11.6",
+        "11.6"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's the difference between the Family Medical Leave policy and the Family Care Act policy?",
+      "expected_section_id": "12.2",
+      "retrieved_section_ids": [
+        "12.1",
+        "12.2",
+        "20.5",
+        "12.2",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "I'm a victim of domestic violence and need time off for a court appearance, is that covered?",
+      "expected_section_id": "12.5",
+      "retrieved_section_ids": [
+        "12.5",
+        "12.5",
+        "12.5",
+        "12.5",
+        "12.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I use sick leave to go vote if the polls aren't open outside my work hours?",
+      "expected_section_id": "12.6",
+      "retrieved_section_ids": [
+        "12.6",
+        "11.6",
+        "19.1",
+        "11.6",
+        "11.6"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I'm injured on the job, how does worker's compensation leave interact with my FMLA time?",
+      "expected_section_id": "12.7",
+      "retrieved_section_ids": [
+        "12.7",
+        "12.1",
+        "20.5",
+        "12.1",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I request unpaid time off for personal reasons unrelated to illness, and for how long?",
+      "expected_section_id": "12.8",
+      "retrieved_section_ids": [
+        "11.11",
+        "11.11",
+        "11.6",
+        "11.9",
+        "11.11"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0
+    },
+    {
+      "question": "What happens to my health insurance if I go on unpaid leave?",
+      "expected_section_id": "11.1",
+      "retrieved_section_ids": [
+        "12.1",
+        "11.1",
+        "11.1",
+        "12.9",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "How long after I lose my job can I keep my health insurance under COBRA?",
+      "expected_section_id": "11.3",
+      "retrieved_section_ids": [
+        "11.3",
+        "11.3",
+        "11.3",
+        "11.3",
+        "11.1C"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I add my same-sex partner to my health insurance?",
+      "expected_section_id": "11.1A",
+      "retrieved_section_ids": [
+        "11.1A",
+        "11.1A",
+        "11.1A",
+        "11.1A",
+        "11.1A"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How many paid holidays does the county observe each year, and is there an extra one around the holidays?",
+      "expected_section_id": "11.5",
+      "retrieved_section_ids": [
+        "11.5",
+        "11.5",
+        "10.5",
+        "10.3",
+        "11.5A"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Do floating holiday hours roll over if I don't use them by the end of the year?",
+      "expected_section_id": "11.5B",
+      "retrieved_section_ids": [
+        "11.5B",
+        "11.7",
+        "12.9",
+        "12.1",
+        "12.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can a coworker donate their vacation hours to me if I run out of leave during a serious illness?",
+      "expected_section_id": "11.9",
+      "retrieved_section_ids": [
+        "11.9",
+        "11.9",
+        "11.9",
+        "11.9",
+        "11.9"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Are there designated rooms for breastfeeding mothers to pump at work?",
+      "expected_section_id": "11.10",
+      "retrieved_section_ids": [
+        "11.10",
+        "11.10",
+        "11.10",
+        "11.10",
+        "13.9"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I take unpaid days off for a religious holiday not on the official calendar?",
+      "expected_section_id": "11.11",
+      "retrieved_section_ids": [
+        "11.11",
+        "11.11",
+        "11.11",
+        "11.5A",
+        "12.9"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What is considered sexual harassment under county policy?",
+      "expected_section_id": "3.2",
+      "retrieved_section_ids": [
+        "3.2",
+        "3.0",
+        "13.3",
+        "14.4",
+        "3.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I want to file a harassment complaint, who do I report it to and is there a deadline?",
+      "expected_section_id": "3.3",
+      "retrieved_section_ids": [
+        "3.3",
+        "3.2",
+        "3.0",
+        "23.2",
+        "15.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I get in trouble for reporting my manager's misconduct?",
+      "expected_section_id": "3.3",
+      "retrieved_section_ids": [
+        "3.2",
+        "23.2",
+        "23.2",
+        "3.2",
+        "15.1"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0
+    },
+    {
+      "question": "Can I get fired without any prior warning?",
+      "expected_section_id": "14.1",
+      "retrieved_section_ids": [
+        "14.4",
+        "14.3",
+        "14.1",
+        "14.1",
+        "14.0"
+      ],
+      "hit": true,
+      "rank": 3,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "question": "How long does a written warning stay in my personnel file?",
+      "expected_section_id": "14.6",
+      "retrieved_section_ids": [
+        "14.6",
+        "20.9",
+        "14.3",
+        "20.6",
+        "21.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What's the difference between a verbal warning and a final warning?",
+      "expected_section_id": "14.3",
+      "retrieved_section_ids": [
+        "14.3",
+        "20.8",
+        "20.9",
+        "20.4",
+        "14.3"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How many unscheduled absences before I get a verbal warning for attendance?",
+      "expected_section_id": "20.2",
+      "retrieved_section_ids": [
+        "20.9",
+        "20.9",
+        "20.4",
+        "20.9",
+        "20.1"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0
+    },
+    {
+      "question": "Can I use tape recorders during a disciplinary meeting with HR?",
+      "expected_section_id": "14.2",
+      "retrieved_section_ids": [
+        "14.2",
+        "15.4",
+        "14.3",
+        "15.1",
+        "13.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Am I allowed to check personal email at work?",
+      "expected_section_id": "13.3",
+      "retrieved_section_ids": [
+        "13.3",
+        "13.3",
+        "13.3",
+        "13.3",
+        "13.3"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I get fired for testing positive on a drug test?",
+      "expected_section_id": "13.4",
+      "retrieved_section_ids": [
+        "13.4",
+        "13.4",
+        "13.4",
+        "13.4",
+        "13.4"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I voluntarily seek help for a drinking problem before being tested, will I be punished?",
+      "expected_section_id": "13.4",
+      "retrieved_section_ids": [
+        "13.4",
+        "13.4",
+        "13.4",
+        "13.4",
+        "13.4"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I work a second job on the side?",
+      "expected_section_id": "13.5",
+      "retrieved_section_ids": [
+        "6.3",
+        "13.5",
+        "6.3",
+        "6.3",
+        "13.1"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "Can my supervisor give me special treatment because we're related?",
+      "expected_section_id": "13.10",
+      "retrieved_section_ids": [
+        "13.10",
+        "13.1",
+        "12.5",
+        "13.1",
+        "12.2"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I smoke right outside the building entrance during my break?",
+      "expected_section_id": "13.11",
+      "retrieved_section_ids": [
+        "13.11",
+        "13.4",
+        "13.4",
+        "11.10",
+        "11.10"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How much notice do I need to give before resigning?",
+      "expected_section_id": "16.1",
+      "retrieved_section_ids": [
+        "16.1",
+        "12.5",
+        "12.1",
+        "16.1",
+        "16.4"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I get laid off, how long do I stay eligible for recall to my old job?",
+      "expected_section_id": "16.5",
+      "retrieved_section_ids": [
+        "16.5",
+        "16.5",
+        "9.9",
+        "16.5",
+        "16.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I don't show up to work for three days without calling in, what happens?",
+      "expected_section_id": "16.4",
+      "retrieved_section_ids": [
+        "20.2",
+        "16.4",
+        "2.7",
+        "12.1",
+        "12.2"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "Can I use my personal car for work trips and get reimbursed for mileage?",
+      "expected_section_id": "18.5",
+      "retrieved_section_ids": [
+        "18.5",
+        "18.1",
+        "13.2",
+        "18.6",
+        "13.2"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I use a county vehicle to run a personal errand like stopping at the grocery store?",
+      "expected_section_id": "18.6",
+      "retrieved_section_ids": [
+        "18.7",
+        "18.6",
+        "18.6",
+        "18.10",
+        "18.5"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "How many days can I work from home under the telecommuting policy?",
+      "expected_section_id": "19.2",
+      "retrieved_section_ids": [
+        "19.2",
+        "19.2",
+        "12.1",
+        "19.2",
+        "12.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If the county announces an emergency closure mid-day, do I still get paid for the rest of my shift?",
+      "expected_section_id": "19.1",
+      "retrieved_section_ids": [
+        "19.1",
+        "19.1",
+        "19.1",
+        "19.1",
+        "19.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "Can I request a copy of my personnel file, and does it cost anything?",
+      "expected_section_id": "21.3",
+      "retrieved_section_ids": [
+        "21.3",
+        "21.1",
+        "21.2",
+        "2.6",
+        "21.5"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "If I suspect my department is wasting public funds, how do I report it without fear of retaliation?",
+      "expected_section_id": "23.0",
+      "retrieved_section_ids": [
+        "23.2",
+        "23.1",
+        "23.2",
+        "23.2",
+        "3.3"
+      ],
+      "hit": false,
+      "rank": null,
+      "reciprocal_rank": 0
+    },
+    {
+      "question": "What's the difference between demotion and reclassification in terms of pay?",
+      "expected_section_id": "9.6",
+      "retrieved_section_ids": [
+        "9.11",
+        "9.6",
+        "9.7",
+        "7.0",
+        "9.10"
+      ],
+      "hit": true,
+      "rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "Am I eligible for overtime pay, or just comp time?",
+      "expected_section_id": "10.3",
+      "retrieved_section_ids": [
+        "10.3",
+        "10.3",
+        "10.3",
+        "9.12",
+        "10.1"
+      ],
+      "hit": true,
+      "rank": 1,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

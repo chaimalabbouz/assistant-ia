@@ -3,3 +3,6 @@ langchain-text-splitters==0.3.0
 cohere==5.11.4
 qdrant-client==1.11.3
 python-dotenv==1.0.1
+langchain
+langchain-mistralai
+rank-bm25==0.2.2

@@ -1,0 +1,290 @@
+[
+  {
+    "question": "How many hours of sick leave do I accrue per month?",
+    "reference_answer": "Employees accrue sick leave at the rate of eight hours per month (4 hours per pay period), based on paid hours, provided they are compensated for at least 80% of their scheduled work hours in the pay period.",
+    "expected_section_id": "11.6",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Is there a limit to how much sick leave I can bank?",
+    "reference_answer": "Yes, sick leave may be accumulated to a maximum of 1,200 hours.",
+    "expected_section_id": "11.6",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If I resign after many years of service, can I get paid out for unused sick leave?",
+    "reference_answer": "Employees with a minimum of ten years of service who resign in good standing or are laid off can cash out a portion of accrued but unused sick leave, on a tiered scale (e.g. 75% of hours over 900, 50% of hours over 600, 25% of hours over 300).",
+    "expected_section_id": "11.6",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How much vacation time do I earn when I first start working, versus after 10 years?",
+    "reference_answer": "For M3 employees, vacation accrual starts at 8 hours/month (12 days/year) and increases with years of service, reaching 14 hours/month (21 days/year) after 10 years of completed service. M1/M2 employees have a different, higher schedule.",
+    "expected_section_id": "11.7",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Do I get paid for unused vacation if I leave the county?",
+    "reference_answer": "Yes, upon termination with more than six months of service, the employee is paid for all accrued and unused vacation at their final base hourly rate of pay.",
+    "expected_section_id": "11.7",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What can PTO be used for, and who is eligible for the PTO plan instead of traditional vacation/sick leave?",
+    "reference_answer": "PTO provides flexible paid time off that can be used for vacation, personal or family illness, doctor appointments, school, volunteering, and other activities of the employee's choice. It applies to employees hired on or after January 1, 2013, and to existing employees who elect the plan.",
+    "expected_section_id": "11.8",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many paid days off do I get if my mother passes away?",
+    "reference_answer": "A regular employee is granted up to three work days of paid bereavement leave for the death of an immediate family member, normally used within two weeks of the date of death. An additional two days may be granted if air travel or long land travel is required.",
+    "expected_section_id": "12.4",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Does my domestic partner count as immediate family for bereavement leave?",
+    "reference_answer": "Yes, but bereavement leave for a domestic partner or their children requires that a signed Affidavit of Domestic Partnership is on file with HR-Benefits.",
+    "expected_section_id": "12.4",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many weeks of leave can I take under FMLA to care for a seriously ill family member?",
+    "reference_answer": "Up to 12 weeks of Family Medical Leave (FML) are available to eligible employees within a 12-month rolling period; this can be taken continuously, intermittently, or on a reduced schedule if medically necessary.",
+    "expected_section_id": "12.1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Do I need to use up my sick leave before going on unpaid FMLA leave?",
+    "reference_answer": "Yes, an employee taking FML to care for a seriously ill family member or themselves must exhaust all accrued sick leave before using vacation or floating holiday, and cannot go unpaid until all accrued leave is exhausted.",
+    "expected_section_id": "12.1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the difference between the Family Medical Leave policy and the Family Care Act policy?",
+    "reference_answer": "FML (12.1) covers an employee's own serious health condition or that of a covered family member, is a federal/state mandate, and provides job-protected leave regardless of accrued leave availability. Family Care (12.2) only covers time off to care for a child or other covered dependent's health condition, and is only available to the extent the employee has accrued paid leave.",
+    "expected_section_id": "12.2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "I'm a victim of domestic violence and need time off for a court appearance, is that covered?",
+    "reference_answer": "Yes, the Domestic Violence Leave policy allows reasonable leave (continuous, intermittent, or reduced schedule, paid or unpaid) to prepare for or participate in civil or criminal legal proceedings related to domestic violence, sexual assault, or stalking.",
+    "expected_section_id": "12.5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I use sick leave to go vote if the polls aren't open outside my work hours?",
+    "reference_answer": "No, sick leave is not for voting. Employees unable to vote while off duty may use paid vacation, comp time, or floating holiday time to vote during the work day.",
+    "expected_section_id": "12.6",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If I'm injured on the job, how does worker's compensation leave interact with my FMLA time?",
+    "reference_answer": "Family Medical Leave runs concurrently with worker's compensation leave. Employees may charge their sick leave account for the difference between worker's compensation payments and their normal pay.",
+    "expected_section_id": "12.7",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I request unpaid time off for personal reasons unrelated to illness, and for how long?",
+    "reference_answer": "Yes, regular employees may request a leave of absence for up to twelve continuous months for educational or personal reasons, subject to Appointing Authority approval; not more than one such leave is allowed in any 5-year period.",
+    "expected_section_id": "12.8",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What happens to my health insurance if I go on unpaid leave?",
+    "reference_answer": "An employee on unpaid leave will lose coverage the first of the month following the first date of unpaid leave, unless the leave is covered under FML or is an ADA/WLAD accommodation. Employees may continue coverage under COBRA.",
+    "expected_section_id": "11.1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How long after I lose my job can I keep my health insurance under COBRA?",
+    "reference_answer": "Generally up to 18 months for loss of coverage due to termination or reduction in hours, which can extend to 36 months for dependents if a second qualifying event (such as divorce or death) occurs.",
+    "expected_section_id": "11.3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I add my same-sex partner to my health insurance?",
+    "reference_answer": "Yes, Clark County makes domestic partner benefits available for medical, vision, and dental coverage to same-sex or opposite-sex domestic partners who meet the eligibility requirements (12 months cohabitation, financial interdependence, etc.), documented via an Affidavit of Domestic Partnership.",
+    "expected_section_id": "11.1A",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many paid holidays does the county observe each year, and is there an extra one around the holidays?",
+    "reference_answer": "The county observes 10 standard holidays (New Year's, MLK Day, President's Day, Memorial Day, Independence Day, Labor Day, Veteran's Day, Thanksgiving, day after Thanksgiving, Christmas) plus a discretionary Commissioner's Holiday granted around mid-December to January.",
+    "expected_section_id": "11.5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Do floating holiday hours roll over if I don't use them by the end of the year?",
+    "reference_answer": "No, all floating holiday leave must be used by the end of the year or it is forfeited.",
+    "expected_section_id": "11.5B",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can a coworker donate their vacation hours to me if I run out of leave during a serious illness?",
+    "reference_answer": "Yes, the Leave Donation Program allows employees with at least one year of service to voluntarily donate accrued vacation to another employee experiencing a severe, prolonged illness or injury, once that employee has exhausted their own accrued leave.",
+    "expected_section_id": "11.9",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Are there designated rooms for breastfeeding mothers to pump at work?",
+    "reference_answer": "Yes, the county provides private lactation rooms with a refrigerator, for example at the Public Service Center (1st floor, Room 116) and the Center for Community Health (4th floor, Room A427).",
+    "expected_section_id": "11.10",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can I take unpaid days off for a religious holiday not on the official calendar?",
+    "reference_answer": "Yes, employees may take up to two unpaid days off per calendar year for reasons of faith or conscience, upon approval by their Department Head, submitted at least two weeks in advance when possible.",
+    "expected_section_id": "11.11",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is considered sexual harassment under county policy?",
+    "reference_answer": "Sexual harassment includes unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature when submission is made a condition of employment, influences employment decisions, or creates a hostile or offensive work environment. Examples include sexual jokes, unwelcome touching, and display of sexually explicit material.",
+    "expected_section_id": "3.2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If I want to file a harassment complaint, who do I report it to and is there a deadline?",
+    "reference_answer": "Complaints can be submitted to a supervisor, manager, or directly to Human Resources, and should be filed as soon as possible, in no event later than 180 days after the incident.",
+    "expected_section_id": "3.3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I get in trouble for reporting my manager's misconduct?",
+    "reference_answer": "No, employees who bring forward complaints in good faith are protected against retaliation; however, retaliation protection does not apply to complaints that are knowingly false or made in bad faith.",
+    "expected_section_id": "3.3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I get fired without any prior warning?",
+    "reference_answer": "Yes, in cases of serious misconduct or serious/willful violations of policy, the county reserves the right to terminate employment immediately without a particular sequence of progressive corrective action.",
+    "expected_section_id": "14.1",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How long does a written warning stay in my personnel file?",
+    "reference_answer": "A written warning is filed for two years, after which the employee may request its removal provided the problem has been fully corrected with no new concerns during that period.",
+    "expected_section_id": "14.6",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the difference between a verbal warning and a final warning?",
+    "reference_answer": "A verbal warning is an informal step used to flag that specific conduct must be corrected, generally kept for one year. A final warning is a defined pre-termination improvement period giving the employee a last chance before termination, and can be used in lieu of suspension.",
+    "expected_section_id": "14.3",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How many unscheduled absences before I get a verbal warning for attendance?",
+    "reference_answer": "Seven incidents of unscheduled absence within a rolling 12-month period is considered excessive and triggers a verbal warning.",
+    "expected_section_id": "20.2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I use tape recorders during a disciplinary meeting with HR?",
+    "reference_answer": "No, employees may not record meetings or conversations related to County or employment matters unless all participants are informed and consent to the recording.",
+    "expected_section_id": "14.2",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Am I allowed to check personal email at work?",
+    "reference_answer": "Minor, negligible personal use of county equipment and time (including for brief personal emails) is generally not subject to discipline, but any use must remain infrequent and incidental, and electronic communications remain county property subject to monitoring.",
+    "expected_section_id": "13.3",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I get fired for testing positive on a drug test?",
+    "reference_answer": "An employee who tests positive for illegal drugs or alcohol is removed from their job and evaluated by a Substance Abuse Professional; a second positive test or failure to comply with treatment can result in discipline up to and including termination.",
+    "expected_section_id": "13.4",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If I voluntarily seek help for a drinking problem before being tested, will I be punished?",
+    "reference_answer": "No, an employee who voluntarily seeks assistance for a drug or alcohol problem prior to reasonable suspicion will not be disciplined and will be referred to the Employee Assistance Program.",
+    "expected_section_id": "13.4",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I work a second job on the side?",
+    "reference_answer": "Outside employment is permitted as long as it doesn't create an actual or potential conflict of interest, doesn't negatively affect job performance, and doesn't overlap with assigned county work hours.",
+    "expected_section_id": "13.5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can my supervisor give me special treatment because we're related?",
+    "reference_answer": "No, this would create a conflict of interest under the Nepotism policy; employees who become related or personally involved with someone creating an actual or potential conflict must notify their Department Head, who will make changes to preclude the conflict within a 90-day grace period.",
+    "expected_section_id": "13.10",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I smoke right outside the building entrance during my break?",
+    "reference_answer": "No, smoking is prohibited within 25 feet of all entrances, exits, windows that open, and ventilation intakes, and inside all county facilities.",
+    "expected_section_id": "13.11",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How much notice do I need to give before resigning?",
+    "reference_answer": "Employees should present a letter of resignation at least two calendar weeks prior to their last day of work; failing to give two weeks' notice may jeopardize eligibility for rehire or other favorable treatment.",
+    "expected_section_id": "16.1",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If I get laid off, how long do I stay eligible for recall to my old job?",
+    "reference_answer": "Laid-off employees are placed on a recall list for their former classification for twelve months from the effective date of layoff.",
+    "expected_section_id": "16.5",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If I don't show up to work for three days without calling in, what happens?",
+    "reference_answer": "An employee absent for three consecutive work days without notice to the Appointing Authority is considered to have abandoned their position, unless the failure to notify was clearly beyond their control.",
+    "expected_section_id": "16.4",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I use my personal car for work trips and get reimbursed for mileage?",
+    "reference_answer": "Yes, subject to department head approval, employees can use personal vehicles for county business and are reimbursed at the county's optional standard mileage rate, provided the vehicle meets legal and safety requirements.",
+    "expected_section_id": "18.5",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Can I use a county vehicle to run a personal errand like stopping at the grocery store?",
+    "reference_answer": "Generally no; personal use of a county vehicle is prohibited except for narrow exceptions like incidental stops (restaurant, ATM, gas station) or overnight travel needs, and must be approved.",
+    "expected_section_id": "18.6",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How many days can I work from home under the telecommuting policy?",
+    "reference_answer": "No employee should telecommute more than 40% of their work schedule (16 hours/week for a 40-hour employee), with 20% (8 hours) recommended as the typical maximum.",
+    "expected_section_id": "19.2",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If the county announces an emergency closure mid-day, do I still get paid for the rest of my shift?",
+    "reference_answer": "Yes, employees who reported to work before a partial-day closure are paid for their normally scheduled shift without having to use paid leave for the closure period; this is coded as emergency condition (ADM) pay.",
+    "expected_section_id": "19.1",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Can I request a copy of my personnel file, and does it cost anything?",
+    "reference_answer": "Yes, employees can request a copy of their personnel file and are provided one copy at no cost once every 24 months.",
+    "expected_section_id": "21.3",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If I suspect my department is wasting public funds, how do I report it without fear of retaliation?",
+    "reference_answer": "Employees can report improper governmental action, in writing, to their supervisor, another manager, or the Human Resources Director, who serves as compliance officer. The Whistleblower policy protects employees against retaliatory action for good-faith reports.",
+    "expected_section_id": "23.0",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What's the difference between demotion and reclassification in terms of pay?",
+    "reference_answer": "Reclassification (upward or downward) generally places the employee at approximately the same salary in the new range, sometimes with red-circling if above the new max. A disciplinary/performance demotion places the employee at the highest step in the new range that is at or below their former salary.",
+    "expected_section_id": "9.6",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Am I eligible for overtime pay, or just comp time?",
+    "reference_answer": "Non-exempt employees (M3 and represented) are entitled to overtime compensation at 1.5x their regular rate for hours over 40/week, but may elect compensatory time off instead with department authorization; M1/M2 exempt employees generally are not eligible for overtime except in extraordinary comptime circumstances.",
+    "expected_section_id": "10.3",
+    "difficulty": "medium"
+  }
+]
