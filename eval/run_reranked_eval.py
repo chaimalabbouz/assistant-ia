@@ -6,17 +6,17 @@ Usage:
     python -m eval.run_reranked_eval
 """
 
+import asyncio  # CHANGE 1 : import asyncio
 import json
 import sys
-import time
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from config import GOLDEN_DATASET_PATH
-from rag.reranked_retriever import RerankedRetriever
+from Backend.app.rag.reranked_retriever import RerankedRetriever
 
 TOP_K = 5
-DELAY_BETWEEN_QUESTIONS = 7  # secosndes, pour respecter le rate limit Cohere Trial (10 appels/min)
+DELAY_BETWEEN_QUESTIONS = 7  # secondes, pour respecter le rate limit Cohere Trial (10 appels/min)
 
 
 def load_golden_dataset(path: Path) -> list[dict]:
@@ -31,34 +31,37 @@ def evaluate_one(retrieved_ids: list[str], expected_id: str) -> dict:
     return {"hit": False, "rank": None, "reciprocal_rank": 0}
 
 
-def main():
+async def main():  # CHANGE 2 : main devient async
     retriever = RerankedRetriever()
 
-    dataset = load_golden_dataset(GOLDEN_DATASET_PATH)
-    print(f"\n{len(dataset)} questions chargees depuis le golden dataset.\n")
+    try:  # CHANGE 3 : fermeture propre des clients, meme en cas d'erreur
+        dataset = load_golden_dataset(GOLDEN_DATASET_PATH)
+        print(f"\n{len(dataset)} questions chargees depuis le golden dataset.\n")
 
-    results = []
-    for item in dataset:
-        question = item["question"]
-        expected_id = item["expected_section_id"]
+        results = []
+        for item in dataset:
+            question = item["question"]
+            expected_id = item["expected_section_id"]
 
-        retrieved = retriever.search(question, top_k=TOP_K)
-        retrieved_ids = [r["section_id"] for r in retrieved]
-        eval_result = evaluate_one(retrieved_ids, expected_id)
-        time.sleep(DELAY_BETWEEN_QUESTIONS)
+            retrieved = await retriever.search(question, top_k=TOP_K)  # CHANGE 4 : await
+            retrieved_ids = [r["section_id"] for r in retrieved]
+            eval_result = evaluate_one(retrieved_ids, expected_id)
+            await asyncio.sleep(DELAY_BETWEEN_QUESTIONS)  # CHANGE 4 : asyncio.sleep au lieu de time.sleep
 
-        results.append(
-            {
-                "question": question,
-                "expected_section_id": expected_id,
-                "retrieved_section_ids": retrieved_ids,
-                **eval_result,
-            }
-        )
+            results.append(
+                {
+                    "question": question,
+                    "expected_section_id": expected_id,
+                    "retrieved_section_ids": retrieved_ids,
+                    **eval_result,
+                }
+            )
 
-        status = "OK" if eval_result["hit"] else "MISS"
-        rank_info = f"rank={eval_result['rank']}" if eval_result["hit"] else "not found"
-        print(f"[{status}] ({rank_info}) {question[:70]}")
+            status = "OK" if eval_result["hit"] else "MISS"
+            rank_info = f"rank={eval_result['rank']}" if eval_result["hit"] else "not found"
+            print(f"[{status}] ({rank_info}) {question[:70]}")
+    finally:
+        await retriever.close()
 
     n = len(results)
     hits = sum(1 for r in results if r["hit"])
@@ -117,4 +120,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())  # un seul asyncio.run pour tout le script

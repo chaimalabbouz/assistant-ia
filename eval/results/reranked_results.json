@@ -2,7 +2,7 @@
   "config": "hybrid_reranked",
   "top_k": 5,
   "recall_at_k": 0.9166666666666666,
-  "mrr": 0.826388888888889,
+  "mrr": 0.8246527777777778,
   "details": [
     {
       "question": "How many hours of sick leave do I accrue per month?",
@@ -373,14 +373,14 @@
       "expected_section_id": "14.1",
       "retrieved_section_ids": [
         "14.4",
+        "3.3",
         "14.3",
-        "14.1",
         "14.1",
         "14.0"
       ],
       "hit": true,
-      "rank": 3,
-      "reciprocal_rank": 0.3333333333333333
+      "rank": 4,
+      "reciprocal_rank": 0.25
     },
     {
       "question": "How long does a written warning stay in my personnel file?",
@@ -432,7 +432,7 @@
         "15.4",
         "14.3",
         "15.1",
-        "13.1"
+        "14.4"
       ],
       "hit": true,
       "rank": 1,
@@ -514,9 +514,9 @@
       "retrieved_section_ids": [
         "13.11",
         "13.4",
-        "13.4",
-        "11.10",
-        "11.10"
+        "18.10",
+        "13.7",
+        "13.4"
       ],
       "hit": true,
       "rank": 1,

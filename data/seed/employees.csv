@@ -1,0 +1,101 @@
+﻿employee_id,first_name,last_name,professional_email,phone,department_id,job_title,manager_id,employment_type,hire_date,employment_status,location
+EMP001,Victor,Roux,victor.roux@northstar-enterprise.example,+216 25108603,DEP001,HR Director,,Full-time,2016-01-26,Active,"Tunis, Tunisia"
+EMP002,Victor,Petit,victor.petit@northstar-enterprise.example,+216 22458591,DEP001,HR Manager,EMP001,Full-time,2019-07-26,Active,"Tunis, Tunisia"
+EMP003,Olivia,Bernard,olivia.bernard@northstar-enterprise.example,+216 22571945,DEP001,Talent Acquisition Manager,EMP001,Full-time,2022-09-25,Active,Remote
+EMP004,Aya,Muller,aya.muller@northstar-enterprise.example,+216 21445199,DEP002,Engineering Director,,Full-time,2016-08-26,Active,"Tunis, Tunisia"
+EMP005,Bilal,Conti,bilal.conti@northstar-enterprise.example,+216 28038374,DEP002,Engineering Manager,EMP004,Full-time,2020-03-25,Active,Remote
+EMP006,Gabriel,Roux,gabriel.roux@northstar-enterprise.example,+216 21109031,DEP002,Platform Engineering Manager,EMP004,Full-time,2023-01-14,Active,"Tunis, Tunisia"
+EMP007,Julien,Girard,julien.girard@northstar-enterprise.example,+216 25661907,DEP003,Finance Director,,Full-time,2017-12-15,Active,"Tunis, Tunisia"
+EMP008,Hana,Girard,hana.girard@northstar-enterprise.example,+216 22714803,DEP003,Finance Manager,EMP007,Full-time,2020-05-31,Active,"Tunis, Tunisia"
+EMP009,Maya,Andre,maya.andre@northstar-enterprise.example,+216 26770619,DEP003,Accounting Manager,EMP007,Full-time,2022-04-06,Active,"Tunis, Tunisia"
+EMP010,Sana,Martinez,sana.martinez@northstar-enterprise.example,+216 29996414,DEP004,Marketing Director,,Full-time,2016-02-14,Active,"Paris, France"
+EMP011,Ethan,Haddad,ethan.haddad@northstar-enterprise.example,+216 25918715,DEP004,Marketing Manager,EMP010,Full-time,2022-03-31,Active,"Tunis, Tunisia"
+EMP012,Salma,Lefevre,salma.lefevre@northstar-enterprise.example,+216 22166941,DEP004,Growth Manager,EMP010,Full-time,2022-01-21,Active,Remote
+EMP013,Leila,Santos,leila.santos@northstar-enterprise.example,+216 25855124,DEP005,Sales Director,,Full-time,2017-11-08,Active,"Tunis, Tunisia"
+EMP014,Maya,Mercier,maya.mercier@northstar-enterprise.example,+216 25663623,DEP005,Sales Manager,EMP013,Full-time,2020-08-11,Active,"Tunis, Tunisia"
+EMP015,Yasmin,Lefevre,yasmin.lefevre@northstar-enterprise.example,+216 26960453,DEP005,Account Manager,EMP013,Full-time,2022-02-03,Active,"Paris, France"
+EMP016,Rayan,Khan,rayan.khan@northstar-enterprise.example,+216 22197935,DEP006,IT Director,,Full-time,2017-11-17,Active,"Tunis, Tunisia"
+EMP017,Clara,Nielsen,clara.nielsen@northstar-enterprise.example,+216 25107245,DEP006,IT Manager,EMP016,Full-time,2019-12-02,Active,Remote
+EMP018,Ava,Roux,ava.roux@northstar-enterprise.example,+216 24684531,DEP006,Infrastructure Manager,EMP016,Full-time,2023-03-09,Active,"Tunis, Tunisia"
+EMP019,Maxime,Thomas,maxime.thomas@northstar-enterprise.example,+216 24842788,DEP007,Operations Director,,Full-time,2018-02-25,Active,"Paris, France"
+EMP020,Samir,Roux,samir.roux@northstar-enterprise.example,+216 22110460,DEP007,Operations Manager,EMP019,Full-time,2021-07-16,Active,"Tunis, Tunisia"
+EMP021,Omar,Conti,omar.conti@northstar-enterprise.example,+216 29375710,DEP007,Service Delivery Manager,EMP019,Full-time,2021-07-12,Active,"Tunis, Tunisia"
+EMP022,Karim,Moreau,karim.moreau@northstar-enterprise.example,+216 25443951,DEP008,Customer Support Director,,Full-time,2017-10-20,Active,"Paris, France"
+EMP023,Victor,Haddad,victor.haddad@northstar-enterprise.example,+216 25408072,DEP008,Support Manager,EMP022,Full-time,2020-10-07,Active,"Tunis, Tunisia"
+EMP024,Gabriel,Dupont,gabriel.dupont@northstar-enterprise.example,+216 27073292,DEP008,Customer Success Manager,EMP022,Full-time,2022-10-21,Active,Remote
+EMP025,Aya,Trabelsi,aya.trabelsi@northstar-enterprise.example,+216 22525206,DEP009,Product Director,,Full-time,2016-05-21,Active,"Tunis, Tunisia"
+EMP026,Adam,Rossi,adam.rossi@northstar-enterprise.example,+216 23684052,DEP009,Product Manager,EMP025,Full-time,2019-03-26,Active,"Tunis, Tunisia"
+EMP027,Nadia,Robert,nadia.robert@northstar-enterprise.example,+216 27455324,DEP009,UX Manager,EMP025,Full-time,2022-09-26,Active,Remote
+EMP028,Karim,Gharbi,karim.gharbi@northstar-enterprise.example,+216 25218028,DEP010,Data & AI Director,,Full-time,2017-09-02,Active,"Paris, France"
+EMP029,Anis,Nielsen,anis.nielsen@northstar-enterprise.example,+216 22921859,DEP010,Data Engineering Manager,EMP028,Full-time,2018-02-17,Active,Remote
+EMP030,Hana,Roux,hana.roux@northstar-enterprise.example,+216 26707197,DEP010,AI Engineering Manager,EMP028,Full-time,2024-01-09,Active,Remote
+EMP031,Hana,Laurent,hana.laurent@northstar-enterprise.example,+216 29517485,DEP002,Backend Engineer,EMP006,Full-time,2021-12-14,Active,Remote
+EMP032,Nathan,Kowalski,nathan.kowalski@northstar-enterprise.example,+216 23710343,DEP002,Mobile Engineer,EMP006,Contractor,2021-03-25,Active,"Tunis, Tunisia"
+EMP033,Alex,David,alex.david@northstar-enterprise.example,+216 21971823,DEP009,Product Operations Specialist,EMP026,Full-time,2020-04-03,Active,"Paris, France"
+EMP034,Maxime,Leroy,maxime.leroy@northstar-enterprise.example,+216 23154051,DEP004,Marketing Analyst,EMP011,Full-time,2019-10-11,Active,Remote
+EMP035,Clara,Kowalski,clara.kowalski@northstar-enterprise.example,+216 24374754,DEP008,Customer Experience Specialist,EMP023,Full-time,2023-09-30,Active,"Tunis, Tunisia"
+EMP036,Leila,Robert,leila.robert@northstar-enterprise.example,+216 26672134,DEP005,Key Account Specialist,EMP015,Full-time,2020-05-10,Active,"Tunis, Tunisia"
+EMP037,Olivia,Girard,olivia.girard@northstar-enterprise.example,+216 22188789,DEP001,Learning Specialist,EMP002,Full-time,2026-01-28,Active,"Tunis, Tunisia"
+EMP038,Salma,Saidi,salma.saidi@northstar-enterprise.example,+216 28930103,DEP009,UX Designer,EMP027,Full-time,2020-06-25,Active,Remote
+EMP039,Julien,Lambert,julien.lambert@northstar-enterprise.example,+216 28835373,DEP004,SEO Specialist,EMP012,Full-time,2023-11-01,Active,"Paris, France"
+EMP040,Sara,Lefevre,sara.lefevre@northstar-enterprise.example,+216 29997381,DEP001,People Operations Specialist,EMP002,Full-time,2020-03-23,Active,"Tunis, Tunisia"
+EMP041,Mehdi,Petit,mehdi.petit@northstar-enterprise.example,+216 21848731,DEP008,Technical Support Engineer,EMP024,Full-time,2019-11-05,Active,"Paris, France"
+EMP042,Thomas,Benali,thomas.benali@northstar-enterprise.example,+216 24586084,DEP009,Product Analyst,EMP026,Contractor,2020-11-12,Active,"Paris, France"
+EMP043,Emma,Bonnet,emma.bonnet@northstar-enterprise.example,+216 29164991,DEP007,Operations Analyst,EMP020,Full-time,2021-12-22,Terminated,"Paris, France"
+EMP044,Victor,Morel,victor.morel@northstar-enterprise.example,+216 21959074,DEP003,Accountant,EMP009,Full-time,2025-01-29,Active,"Tunis, Tunisia"
+EMP045,Aya,Richard,aya.richard@northstar-enterprise.example,+216 24117625,DEP001,Learning Specialist,EMP003,Full-time,2020-10-06,Active,"Tunis, Tunisia"
+EMP046,Hugo,Khelifi,hugo.khelifi@northstar-enterprise.example,+216 21666754,DEP002,DevOps Engineer,EMP005,Full-time,2020-05-06,Active,Remote
+EMP047,Omar,Silva,omar.silva@northstar-enterprise.example,+216 26271130,DEP010,Data Engineer,EMP030,Full-time,2022-07-19,Active,"Paris, France"
+EMP048,Hana,Robert,hana.robert@northstar-enterprise.example,+216 21156287,DEP004,Brand Specialist,EMP012,Full-time,2024-02-16,Active,"Paris, France"
+EMP049,Mila,Robert,mila.robert@northstar-enterprise.example,+216 25098412,DEP008,Customer Experience Specialist,EMP023,Full-time,2021-12-22,Active,"Tunis, Tunisia"
+EMP050,Ilyes,Gharbi,ilyes.gharbi@northstar-enterprise.example,+216 21131249,DEP006,Network Engineer,EMP017,Full-time,2022-05-24,Active,Remote
+EMP051,Adam,Roux,adam.roux@northstar-enterprise.example,+216 25727085,DEP009,Product Designer,EMP026,Contractor,2020-04-17,Active,"Tunis, Tunisia"
+EMP052,Thomas,Bertrand,thomas.bertrand@northstar-enterprise.example,+216 21852264,DEP010,ML Engineer,EMP030,Full-time,2021-12-17,Active,Remote
+EMP053,Zoe,Bertrand,zoe.bertrand@northstar-enterprise.example,+216 23710895,DEP002,QA Engineer,EMP006,Part-time,2022-09-28,Active,"Tunis, Tunisia"
+EMP054,Olivia,Lefevre,olivia.lefevre@northstar-enterprise.example,+216 23484601,DEP008,Customer Experience Specialist,EMP024,Full-time,2020-09-02,Active,Remote
+EMP055,Omar,Costa,omar.costa@northstar-enterprise.example,+216 25186414,DEP007,Process Specialist,EMP020,Full-time,2019-06-13,Active,"Paris, France"
+EMP056,Daniel,Lambert,daniel.lambert@northstar-enterprise.example,+216 21415846,DEP002,Backend Engineer,EMP006,Intern,2025-08-31,Active,"Tunis, Tunisia"
+EMP057,Yasmin,Khan,yasmin.khan@northstar-enterprise.example,+216 22813543,DEP003,Financial Controller,EMP009,Part-time,2021-10-13,Active,"Paris, France"
+EMP058,Alex,Garcia,alex.garcia@northstar-enterprise.example,+216 24740036,DEP007,Operations Analyst,EMP021,Full-time,2024-02-29,Active,"Paris, France"
+EMP059,Mila,Conti,mila.conti@northstar-enterprise.example,+216 29546409,DEP001,People Operations Specialist,EMP002,Full-time,2019-10-12,Active,"Paris, France"
+EMP060,Gabriel,Bertrand,gabriel.bertrand@northstar-enterprise.example,+216 21641849,DEP007,Procurement Specialist,EMP021,Contractor,2021-12-05,Active,"Tunis, Tunisia"
+EMP061,Aya,Durand,aya.durand@northstar-enterprise.example,+216 27462506,DEP002,DevOps Engineer,EMP006,Full-time,2023-11-23,Active,Remote
+EMP062,Victor,Andersen,victor.andersen@northstar-enterprise.example,+216 24305700,DEP010,ML Engineer,EMP030,Full-time,2024-10-30,Active,Remote
+EMP063,Lucas,Nielsen,lucas.nielsen@northstar-enterprise.example,+216 26038571,DEP006,Cloud Engineer,EMP017,Intern,2025-11-18,On Leave,Remote
+EMP064,Sara,Lambert,sara.lambert@northstar-enterprise.example,+216 27361002,DEP009,Product Designer,EMP027,Full-time,2025-03-20,Active,"Tunis, Tunisia"
+EMP065,Omar,Bonnet,omar.bonnet@northstar-enterprise.example,+216 26406444,DEP003,Payroll Analyst,EMP009,Full-time,2022-05-29,Active,"Paris, France"
+EMP066,Ethan,Vincent,ethan.vincent@northstar-enterprise.example,+216 29647849,DEP008,Support Analyst,EMP024,Full-time,2020-11-26,Active,Remote
+EMP067,Sara,Moreau,sara.moreau@northstar-enterprise.example,+216 21409790,DEP010,AI Engineer,EMP029,Part-time,2022-06-25,Active,"Tunis, Tunisia"
+EMP068,Zoe,Saidi,zoe.saidi@northstar-enterprise.example,+216 24262081,DEP001,Recruiter,EMP003,Full-time,2024-02-09,Active,"Paris, France"
+EMP069,Maxime,Bonnet,maxime.bonnet@northstar-enterprise.example,+216 24671545,DEP007,Service Coordinator,EMP021,Full-time,2019-01-23,Active,"Tunis, Tunisia"
+EMP070,Nora,Martinez,nora.martinez@northstar-enterprise.example,+216 29910914,DEP003,Financial Controller,EMP009,Full-time,2020-05-12,Active,"Paris, France"
+EMP071,Mehdi,Francois,mehdi.francois@northstar-enterprise.example,+216 23670226,DEP009,Product Operations Specialist,EMP027,Intern,2026-06-01,Active,"Paris, France"
+EMP072,Thomas,Rossi,thomas.rossi@northstar-enterprise.example,+216 25013879,DEP008,Support Analyst,EMP024,Full-time,2022-02-09,Active,Remote
+EMP073,Clara,Richard,clara.richard@northstar-enterprise.example,+216 23321531,DEP005,Key Account Specialist,EMP014,Full-time,2022-10-07,Active,"Paris, France"
+EMP074,Lina,Girard,lina.girard@northstar-enterprise.example,+216 28816912,DEP003,Accountant,EMP009,Full-time,2019-09-21,Active,"Paris, France"
+EMP075,Noah,Kowalski,noah.kowalski@northstar-enterprise.example,+216 27381734,DEP007,Operations Analyst,EMP020,Part-time,2025-07-20,Active,Remote
+EMP076,Clara,Muller,clara.muller@northstar-enterprise.example,+216 24700025,DEP008,Support Specialist,EMP024,Full-time,2023-09-13,Active,Remote
+EMP077,Anis,Dupont,anis.dupont@northstar-enterprise.example,+216 23768991,DEP008,Technical Support Engineer,EMP024,Full-time,2022-10-08,Active,Remote
+EMP078,Ilyes,Bonnet,ilyes.bonnet@northstar-enterprise.example,+216 23276659,DEP008,Technical Support Engineer,EMP023,Contractor,2019-04-22,Active,"Tunis, Tunisia"
+EMP079,Leo,Kowalski,leo.kowalski@northstar-enterprise.example,+216 27360682,DEP008,Technical Support Engineer,EMP023,Full-time,2024-02-06,Active,"Paris, France"
+EMP080,Mila,Garcia,mila.garcia@northstar-enterprise.example,+216 22151225,DEP005,Key Account Specialist,EMP015,Part-time,2025-01-18,Active,"Tunis, Tunisia"
+EMP081,Nora,Benali,nora.benali@northstar-enterprise.example,+216 22919136,DEP001,HR Business Partner,EMP002,Full-time,2020-09-16,Active,"Tunis, Tunisia"
+EMP082,Nadia,Andersen,nadia.andersen@northstar-enterprise.example,+216 22921542,DEP010,ML Engineer,EMP030,Full-time,2020-11-18,Active,Remote
+EMP083,Ava,Dupont,ava.dupont@northstar-enterprise.example,+216 24327421,DEP003,Senior Accountant,EMP008,Full-time,2025-06-16,On Leave,Remote
+EMP084,Salma,Dubois,salma.dubois@northstar-enterprise.example,+216 26825112,DEP002,DevOps Engineer,EMP005,Full-time,2025-09-25,Active,"Tunis, Tunisia"
+EMP085,Thomas,Petit,thomas.petit@northstar-enterprise.example,+216 28273315,DEP009,Business Analyst,EMP027,Full-time,2019-02-21,Active,"Paris, France"
+EMP086,Rayan,Schmidt,rayan.schmidt@northstar-enterprise.example,+216 29111742,DEP006,IT Operations Specialist,EMP018,Full-time,2024-11-07,Active,Remote
+EMP087,Mariam,David,mariam.david@northstar-enterprise.example,+216 28796514,DEP008,Support Analyst,EMP024,Full-time,2019-12-21,Active,"Paris, France"
+EMP088,Thomas,Michel,thomas.michel@northstar-enterprise.example,+216 26952975,DEP010,Analytics Engineer,EMP030,Full-time,2022-08-24,Active,"Tunis, Tunisia"
+EMP089,Amelia,Gharbi,amelia.gharbi@northstar-enterprise.example,+216 24205394,DEP005,Business Development Executive,EMP015,Contractor,2022-02-05,Active,Remote
+EMP090,Bilal,Trabelsi,bilal.trabelsi@northstar-enterprise.example,+216 28519121,DEP002,Senior Software Engineer,EMP006,Full-time,2024-05-04,Active,Remote
+EMP091,Gabriel,Lefevre,gabriel.lefevre@northstar-enterprise.example,+216 28939993,DEP001,HR Business Partner,EMP003,Full-time,2022-06-08,Active,Remote
+EMP092,Julia,Martinez,julia.martinez@northstar-enterprise.example,+216 25545223,DEP009,Product Operations Specialist,EMP027,Full-time,2022-09-16,Active,"Paris, France"
+EMP093,Julia,Laurent,julia.laurent@northstar-enterprise.example,+216 24213524,DEP005,Business Development Executive,EMP014,Full-time,2020-05-04,Active,Remote
+EMP094,Emma,Petit,emma.petit@northstar-enterprise.example,+216 24256752,DEP004,Communications Specialist,EMP012,Full-time,2024-11-18,Active,Remote
+EMP095,Rayan,Dubois,rayan.dubois@northstar-enterprise.example,+216 21914794,DEP005,Sales Development Representative,EMP015,Full-time,2024-12-27,Active,"Tunis, Tunisia"
+EMP096,Salma,Vincent,salma.vincent@northstar-enterprise.example,+216 28875173,DEP009,Product Designer,EMP026,Full-time,2020-02-25,Active,"Tunis, Tunisia"
+EMP097,Sofia,Dupont,sofia.dupont@northstar-enterprise.example,+216 29250138,DEP008,Support Analyst,EMP024,Full-time,2024-05-10,Active,"Tunis, Tunisia"
+EMP098,Hugo,Durand,hugo.durand@northstar-enterprise.example,+216 27982241,DEP002,DevOps Engineer,EMP005,Full-time,2022-05-29,Active,"Tunis, Tunisia"
+EMP099,Gabriel,Bonnet,gabriel.bonnet@northstar-enterprise.example,+216 26123430,DEP010,Analytics Engineer,EMP029,Full-time,2023-12-19,Active,"Paris, France"
+EMP100,Omar,Bertrand,omar.bertrand@northstar-enterprise.example,+216 22362099,DEP010,Analytics Engineer,EMP029,Full-time,2021-05-01,Active,Remote

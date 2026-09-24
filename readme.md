@@ -1,5 +1,9 @@
 Voici la roadmap complète, organisée pour que ton architecture soit prête dès le départ à accueillir HR + IT + leur fusion, sans que tu aies à tout refaire plus tard.
 
+
+
+venv\Scripts\activate 
+
 Phase 0 — Fondations du projet (avant tout code métier)
 Choisir la structure du repo en microservices dès le départ (monorepo avec dossiers séparés, pas un gros fichier monolithique) :
   /services

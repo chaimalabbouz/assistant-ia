@@ -1,0 +1,11 @@
+﻿department_id,department_name,description
+DEP001,Human Resources,"People operations, talent management, employee relations, and HR policy administration."
+DEP002,Engineering,"Software engineering, platform development, and technical delivery."
+DEP003,Finance,"Financial planning, accounting, reporting, and corporate finance."
+DEP004,Marketing,"Brand, communications, demand generation, and marketing operations."
+DEP005,Sales,"Enterprise sales, account management, and business development."
+DEP006,IT,"Infrastructure, internal systems, cybersecurity, and IT support."
+DEP007,Operations,"Business operations, process management, and service delivery."
+DEP008,Customer Support,"Customer service, technical support, and customer success operations."
+DEP009,Product,"Product management, UX, product operations, and roadmap planning."
+DEP010,Data & AI,"Data engineering, analytics, machine learning, and AI solutions."
