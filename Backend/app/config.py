@@ -28,3 +28,17 @@ POSTGRES_PORT = 5432
 POSTGRES_DB = "hr_assistant_db"
 POSTGRES_USER = "hr_admin"
 POSTGRES_PASSWORD = "hr_password"
+
+# --- Auth / Sécurité ---
+# IMPORTANT : en production, cette clé doit venir d'une variable d'environnement,
+# jamais être codée en dur. Pour le dev local, une valeur fixe suffit.
+# Génère une vraie clé avec : python -c "import secrets; print(secrets.token_hex(32))"
+SECRET_KEY = "CHANGE_ME_dev_only_secret_key_replace_before_prod"
+JWT_ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 8  # 8 heures
+
+# --- Database URL (construite depuis tes variables Postgres déjà définies) ---
+DATABASE_URL = (
+    f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
+    f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+)
