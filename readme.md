@@ -1,3 +1,15 @@
+pour lancer l application :backend> uvicorn app.main:app --reload  
+
+
+
+
+
+
+
+
+
+
+
 Voici la roadmap complète, organisée pour que ton architecture soit prête dès le départ à accueillir HR + IT + leur fusion, sans que tu aies à tout refaire plus tard.
 
 
