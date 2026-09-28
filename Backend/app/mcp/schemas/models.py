@@ -38,3 +38,11 @@ class LeaveBalance(BaseModel):
     used_days: float
     remaining_days: float
     year: int
+
+class TicketInfo(BaseModel):
+    ticket_id: str
+    employee_id: str
+    question: str
+    category: str
+    status: str
+    created_at: str

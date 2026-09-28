@@ -84,3 +84,13 @@ class LeaveBalance(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
 
     employee: Mapped["Employee"] = relationship(back_populates="leave_balances")
+
+class Ticket(Base):
+    __tablename__ = "tickets"
+
+    ticket_id: Mapped[str] = mapped_column(String(20), primary_key=True)
+    employee_id: Mapped[str] = mapped_column(ForeignKey("employees.employee_id"), nullable=False)
+    question: Mapped[str] = mapped_column(String, nullable=False)
+    category: Mapped[str] = mapped_column(String(50), nullable=False)
+    status: Mapped[str] = mapped_column(String(50), nullable=False, default="pending")
+    created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
