@@ -1,7 +1,7 @@
 pour lancer l application :backend> uvicorn app.main:app --reload  
  .\venv\Scripts\activate 
 
-
+si on a modifer ue chise dans le bakcnd :on fait:docker build -t hr-assistant .
 
 
 

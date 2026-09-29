@@ -1,19 +1,9 @@
 import psycopg2
 
-from app.config import (
-    POSTGRES_HOST,
-    POSTGRES_PORT,
-    POSTGRES_DB,
-    POSTGRES_USER,
-    POSTGRES_PASSWORD,
-)
+from app.config import DATABASE_URL
 
 
 def get_db_connection():
-    return psycopg2.connect(
-        host=POSTGRES_HOST,
-        port=POSTGRES_PORT,
-        dbname=POSTGRES_DB,
-        user=POSTGRES_USER,
-        password=POSTGRES_PASSWORD,
-    )
+    # psycopg2 n'accepte pas le préfixe "+psycopg2" de SQLAlchemy
+    dsn = DATABASE_URL.replace("postgresql+psycopg2://", "postgresql://")
+    return psycopg2.connect(dsn)

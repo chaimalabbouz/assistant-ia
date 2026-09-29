@@ -10,7 +10,7 @@ from app.api.routes.auth import router as auth_router
 from app.api.routes.users import router as users_router
 from app.api.routes.rag import router as rag_router
 from app.rag.hybrid_retriever import HybridRetriever
-from app.agent.checkpointer import init_checkpointer
+from app.agent.checkpointer import init_checkpointer, close_checkpointer
 from app.api.routes.chat import router as chat_router
 from app.api.routes.tickets import router as tickets_router
 
@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
     print("Checkpointer prêt.")
 
     yield
-
+    await close_checkpointer()
     print("Arrêt de l'application.")
 
 
