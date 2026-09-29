@@ -34,7 +34,10 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="HR Assistant API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://assistant-ia-1-7sby.onrender.com",
+    ],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
