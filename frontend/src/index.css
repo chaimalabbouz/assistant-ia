@@ -1,68 +1,114 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --bg: #f7f8fc;
+  --text: #0f172a;
+  --muted: #64748b;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --grad: linear-gradient(135deg, #2563eb, #7c3aed);
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100vh; }
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+button { font-family: inherit; cursor: pointer; }
+
+.nav {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 6vw; background: rgba(247,248,252,.85);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; }
+.btn {
+  padding: 10px 20px; border: none; border-radius: 10px; font-weight: 600;
+  background: var(--grad); color: #fff; transition: transform .15s, box-shadow .15s;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,99,235,.3); }
+.btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn.big { padding: 14px 28px; font-size: 16px; }
+
+.hero {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center;
+  padding: 80px 6vw;
+  background: radial-gradient(circle at 20% 0%, #dbe6ff 0%, transparent 50%),
+              radial-gradient(circle at 90% 30%, #e9ddff 0%, transparent 45%);
+}
+.hero h1 { font-size: clamp(36px, 5vw, 58px); line-height: 1.1; margin: 0 0 18px; }
+.grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { font-size: 18px; color: var(--muted); max-width: 520px; margin: 0 0 28px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.demo {
+  background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+  padding: 20px; box-shadow: 0 20px 50px rgba(15,23,42,.1);
+  display: flex; flex-direction: column; gap: 10px;
+  animation: float 5s ease-in-out infinite;
+}
+.demo .b { padding: 10px 14px; border-radius: 14px; max-width: 85%; font-size: 14px; }
+.demo .u { align-self: flex-end; background: #2563eb; color: #fff; }
+.demo .a { align-self: flex-start; background: #eef1f7; }
+@keyframes float { 50% { transform: translateY(-8px); } }
+
+.section { padding: 70px 6vw; }
+.section h2 { text-align: center; font-size: 32px; margin: 0 0 40px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 24px; transition: transform .2s, box-shadow .2s;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(15,23,42,.1); }
+.card .ico { font-size: 28px; margin-bottom: 10px; }
+.card h3 { margin: 0 0 8px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.step-num {
+  width: 36px; height: 36px; border-radius: 50%; background: var(--grad); color: #fff;
+  display: grid; place-items: center; font-weight: 700; margin-bottom: 12px;
+}
+.privacy {
+  background: var(--grad); color: #fff; text-align: center; padding: 60px 6vw;
+}
+.privacy p { max-width: 640px; margin: 12px auto 0; opacity: .92; font-size: 17px; }
+.footer { text-align: center; padding: 24px; color: var(--muted); font-size: 14px; }
+
+.center-page {
+  min-height: 100vh; display: grid; place-items: center; padding: 20px;
+  background: radial-gradient(circle at 20% 0%, #dbe6ff 0%, transparent 50%),
+              radial-gradient(circle at 90% 80%, #e9ddff 0%, transparent 45%);
+}
+.login-card {
+  display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 380px;
+  background: var(--card); padding: 32px; border-radius: 18px;
+  border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(15,23,42,.1);
+}
+.field { padding: 12px; border-radius: 10px; border: 1px solid var(--border); font-size: 15px; }
+.field:focus { outline: 2px solid #7c3aed55; border-color: #7c3aed; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; padding-top: 50px; }
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.login-page { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
+.login-side {
+  background: var(--grad); color: #fff; padding: 48px 6vw;
+  display: flex; flex-direction: column; justify-content: center; gap: 16px;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.login-side h1 { font-size: clamp(30px, 4vw, 46px); margin: 0; line-height: 1.15; }
+.login-side p { font-size: 18px; opacity: .9; max-width: 420px; margin: 0; }
+.login-main { display: grid; place-items: center; padding: 24px; position: relative; }
+.login-form { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 380px; }
+.login-form h2 { margin: 0; font-size: 28px; }
+.back-link { position: absolute; top: 20px; left: 24px; border: none; background: none; color: var(--muted); font-size: 15px; }
+.pwd-wrap { position: relative; display: flex; }
+.pwd-wrap .field { flex: 1; padding-right: 80px; }
+.pwd-wrap button {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  border: none; background: none; color: #7c3aed; font-weight: 600; font-size: 13px;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.hint { font-size: 13px; color: var(--muted); margin: 0; }
+@media (max-width: 800px) {
+  .login-page { grid-template-columns: 1fr; }
+  .login-side { display: none; }
 }

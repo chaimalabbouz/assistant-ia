@@ -5,7 +5,8 @@ si on a modifer ue chise dans le bakcnd :on fait:docker build -t hr-assistant .
 
 
 
-
+olivia.bernard@northstar-enterprise.example
+Test1234!
 
 
 
