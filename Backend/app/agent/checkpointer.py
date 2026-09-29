@@ -25,7 +25,11 @@ async def init_checkpointer():
 
         pool = AsyncConnectionPool(
             conninfo=CHECKPOINT_DB_URI,
+            min_size=1,
             max_size=5,
+            max_idle=60,
+            max_lifetime=300,
+            check=AsyncConnectionPool.check_connection,
             kwargs={
                 "autocommit": True,
                 "prepare_threshold": None,  # requis avec le pooler Neon
