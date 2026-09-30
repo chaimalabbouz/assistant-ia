@@ -21,6 +21,7 @@ export function useAuth() {
 
   function logout() {
     sessionStorage.removeItem("token");
+    sessionStorage.removeItem("convs");
     setToken(null);
   }
 
